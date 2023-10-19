@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  transform-style: preserve-3d;
+  position: relative;
+  background-image: url(../Images/background.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.45);
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+}
+section .circle3 {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  transform-origin: 100% 100%;
+}
+section .circle3 .venus {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url(../Images/venus.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(80deg);
+  transform-origin: 260px 50% 0;
+  animation-name: venus;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+section .circle4 {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+section .circle4 .mercury {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../Images/mercury.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 185px 50% 0;
+  animation-name: mercury;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+section .circle {
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section .circle .sun {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../Images/sun.webp);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 50px 3px orange;
+}
+section .circle .earth {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../Images/earth.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(200deg);
+  transform-origin: 375px 50% 0;
+  animation-name: earth;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+section .circle .earth .moon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url(../Images/moon.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: moon;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 95px 50% 0;
+}
+section .circle2 {
+  width: 820px;
+  height: 820px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+section .circle2 .mars {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url(../Images/mars.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  animation-name: mars;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 445px 50% 0;
+}
+section .circle6 {
+  width: 1150px;
+  height: 1150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+section .circle6 .jupiter {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: url(../Images/jupiter.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(290deg);
+  animation-name: jupiter;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 640px 50% 0;
+}
+section .circle5 {
+  width: 980px;
+  height: 980px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+section .circle5 .saturn {
+  width: 200px;
+  height: 160px;
+  border-radius: 20%;
+  background-image: url(../Images/saturn.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: saturn;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 590px 50% 0;
+}
+section .circle7 {
+  width: 1350px;
+  height: 1350px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+section .circle7 .uranus {
+  width: 100px;
+  height: 100px;
+  background-image: url(../Images/uranus.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  animation-name: uranus;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 725px 50% 0;
+}
+section .circle8 {
+  width: 1500px;
+  height: 1500px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+section .circle8 .neptune {
+  width: 95px;
+  height: 95px;
+  border-radius: 20%;
+  background-image: url(../Images/neptune.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  animation-name: neptune;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 797.5px 50% 0;
+}
+
+@keyframes venus {
+  to {
+    transform: translate(-50%, -50%) rotate(440deg);
+  }
+}
+@keyframes mercury {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes earth {
+  to {
+    transform: translate(-50%, -50%) rotate(560deg);
+  }
+}
+@keyframes mars {
+  to {
+    transform: translate(-50%, -50%) rotate(480deg);
+  }
+}
+@keyframes jupiter {
+  to {
+    transform: translate(-50%, -50%) rotate(650deg);
+  }
+}
+@keyframes saturn {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes uranus {
+  to {
+    transform: translate(-50%, -50%) rotate(450deg);
+  }
+}
+@keyframes neptune {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes moon {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}/*# sourceMappingURL=Trick-13.css.map */
