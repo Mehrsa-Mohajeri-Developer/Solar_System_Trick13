@@ -1,6 +1,6 @@
 # Solar_System_Trick13
 
-**If you want to see a solar system that all its planets orbit the Sun, make sure to check out my code ♥️👀**
+**If you want to see a solar system that all its planets orbit the Sun, make sure to check out my code ♥️🌌**
 
 - 🔗 [Demo Project]()
   
