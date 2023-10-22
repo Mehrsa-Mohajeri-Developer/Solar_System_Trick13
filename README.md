@@ -10,7 +10,7 @@ https://github.com/Mehrsa-Mohajeri-Developer/Solar_System_Trick13/assets/1450487
 
 - 📆 Created: 2023-10-7
 
-- ✔️ Technologies Used: HTML, CSS, SASS
+- ✔️ Technologies Used: HTML, CSS, SASS, Animation-CSS
 
 - 💥 Role: Front-End
 
